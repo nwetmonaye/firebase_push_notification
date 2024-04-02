@@ -33,10 +33,10 @@ void main() async {
 
   PushNotification.init();
   PushNotification.localNotiInit();
-  // Listen to background notifications
+  // Listen to background notification
   FirebaseMessaging.onBackgroundMessage(_firebaseBackgroundMessage);
 
-  // to handle foreground notifications
+  // to handle foreground notification
   FirebaseMessaging.onMessage.listen((RemoteMessage message) {
     String payloadData = jsonEncode(message.data);
     print("Got a message in foreground");
