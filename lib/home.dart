@@ -18,7 +18,7 @@ class _HomePageState extends State<HomePage> {
       ),
       body: const Center(
         child: Text(
-          "Let's learn to push notification in Flutter",
+          "Let's learn to Push Notification in Flutter",
         ),
       ),
     );
